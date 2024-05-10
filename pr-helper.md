@@ -34,14 +34,6 @@ set -e ar_pkg_yaml
 set -e ar_reg_yaml
 ```
 
-## patch-branch
-
-> Create patch branch
-
-```fish
-git switch -c "feat/$AR_PKG_NAME"
-```
-
 ## pab
 
 ```fish
@@ -106,15 +98,16 @@ npx prettier -w registry.yaml
 mask format
 ```
 
----
+## patch-branch
 
-## scaffold
-
-> Run scaffold
+> Create patch branch
 
 ```fish
-cmdx scaffold "$AR_PKG_NAME"
+git switch -c "feat/$AR_PKG_NAME"
+mask commit
 ```
+
+---
 
 ## set-env
 
@@ -123,6 +116,15 @@ cmdx scaffold "$AR_PKG_NAME"
 ```fish
 set -Ux ar_pkg_yaml "pkgs/$AR_PKG_NAME/pkg.yaml"
 set -Ux ar_reg_yaml "pkgs/$AR_PKG_NAME/registry.yaml"
+```
+
+## scaffold
+
+> Run scaffold
+
+```fish
+cmdx scaffold "$AR_PKG_NAME"
+mask set-env
 ```
 
 ## test
