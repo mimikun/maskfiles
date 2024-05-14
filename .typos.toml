@@ -1,4 +1,6 @@
 [default.extend-words]
+hpe = "hpe"
+
 [files]
 extend-exclude = [
   "pnpm-lock.yaml",
