@@ -1,4 +1,4 @@
-# aqua-registry-contributing-helper-scripts
+# maskfiles
 
 完全に自分専用
 

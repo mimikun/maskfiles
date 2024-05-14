@@ -1,4 +1,4 @@
-# Tasks for aqua-registry-contributing-helper-scripts
+# Tasks for maskfiles
 
 Using [mask](https://github.com/jacobdeichert/mask)
 
@@ -17,7 +17,7 @@ mask copy2win-patch
 > Create a patch
 
 ```bash
-PRODUCT_NAME="aqua-registry-contributing-helper-scripts"
+PRODUCT_NAME="maskfiles"
 DEFAULT_REMOTE="origin"
 DEFAULT_BRANCH="master"
 TODAY=$(date +'%Y%m%d')

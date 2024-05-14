@@ -1,7 +1,7 @@
 .DEFAULT_GOAL := help
 
 today   = $(shell date "+%Y%m%d")
-product_name = aqua-registry-contributing-helper-scripts
+product_name = maskfiles
 
 ## Create a patch and copy it to windows
 .PHONY : patch
